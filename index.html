@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+<script src="greet.test.js"></script>
+<script src="countAllFromTown.test.js"></script>
+<script src="countAllPaarl.test.js"></script>
+<script src="countRegNumber.test.js"></script>
+<script src="findItemsOver.test.js"></script>
+<script src="findItemsOver20.test.js"></script>
+<script src="fromWhere.test.js"></script>
+<script src="isFromBellville.test.js"></script>
+<script src="isWeekday.test.js"></script>
+<script src="mostProfitableDepartment..test.js"></script>
+<script src="regCheck.test.js"></script>
+<script src="totalPhoneBill.test.js"></script>
+<script src="transportFee.test.js"></script>
+<script src="yearsAgo.test.js"></script>
+
+
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/greet.tests.js" charset="utf-8"></script>
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+
+</body>
+</html>
